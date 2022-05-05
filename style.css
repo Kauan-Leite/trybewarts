@@ -38,3 +38,8 @@ display: flex;
   display: flex; 
   height: 500px;
 } 
+
+.inline{
+  display: flex;
+  flex-direction: row;
+}
