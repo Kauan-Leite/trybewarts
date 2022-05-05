@@ -15,6 +15,15 @@ header h1 {
   align-items: center;
 } 
 
+.trybewarts-login {
+  display: flex;
+}
+
+main{
+  display: flex;
+  background-color: beige;
+}
+
 #evaluation-form {
   display: flex;
   flex-direction: column;
