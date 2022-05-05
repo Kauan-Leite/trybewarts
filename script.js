@@ -1,6 +1,10 @@
 let inputEmail = document.getElementById('email');
 let inputSenha = document.getElementById('senha');
 
+let formCadastro = document.getElementById('evaluation-form')
+
+
+
 let btnEnter = document.getElementById('btn-entrar')
 
 function verifyEmail(){
@@ -13,3 +17,27 @@ function verifyEmail(){
 }
 
 btnEnter.addEventListener('click', verifyEmail);
+
+
+
+// function createRate(){
+//   for(let count = 1; count <= 10; count += 1){
+//     let createLabel = document.createElement('label');
+//     let createInput = document.createElement('input');
+
+//     createLabel.setAttribute('for', count);
+//     createLabel.classList.add(count)
+//     formCadastro.appendChild(createLabel);
+
+//     createInput.setAttribute('type', 'radio');
+//     createInput.setAttribute('name', 'rate');
+//     createInput.setAttribute('value', count);
+
+
+//     let searchLabel = document.getElementsByClassName(count)[0];
+//     searchLabel.appendChild(createInput);
+//     createLabel;
+
+//   }
+// }
+// createRate();
