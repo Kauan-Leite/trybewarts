@@ -41,3 +41,16 @@ btnEnter.addEventListener('click', verifyEmail);
 //   }
 // }
 // createRate();
+
+let checkAgree = document.getElementById('agreement');
+
+
+
+function disable(){
+  if (checkAgree.checked == true){
+    document.getElementById('submit-btn').disabled = false;
+  } else {
+    document.getElementById('submit-btn').disabled = true;
+  }
+}
+checkAgree.addEventListener('click', disable);
