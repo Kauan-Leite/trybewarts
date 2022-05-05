@@ -1,19 +1,29 @@
 let inputEmail = document.getElementById('email');
 let inputSenha = document.getElementById('senha');
 
+
 let formCadastro = document.getElementById('evaluation-form')
 
 
 
 let btnEnter = document.getElementById('btn-entrar')
 
-function verifyEmail(){
-  if(inputEmail.value !== "tryber@teste.com" && inputSenha.value !== "123456"){
-      window.alert("Email ou senha inválidos");
-    }
-  else {
-      window.alert("Olá, Tryber!");
-    }
+function verifyEmail(event){
+  event.preventDefault()
+  if(inputEmail.value === 'tryber@teste.com' && inputSenha.value === '123456'){
+    window.alert("Olá, Tryber!");
+  } else {
+    window.alert("Email ou senha inválidos.");
+  }
+
+  // if(resultEmail !== "tryber@teste.com" && resultSenha !== "123456"){
+  //   console.log(resultEmail)
+  //   console.log(resultSenha)
+  //     window.alert("Email ou senha inválidos");
+  //   }
+  // else {
+  //     window.alert("Olá, Tryber!");
+  //   }
 }
 
 btnEnter.addEventListener('click', verifyEmail);
