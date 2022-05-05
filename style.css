@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; 
+  align-items: center;
+  background-color: rgb(50, 167, 145);
+  }
+  
+  header img {
+  height: 130px;
+  }
+  
+  header h1 {
+  display: flex;
+  align-items: center;
+  } 
