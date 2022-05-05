@@ -43,3 +43,8 @@ display: flex;
   display: flex;
   flex-direction: row;
 }
+
+footer{
+  background-color: rgb(105, 4, 12);
+  color: white;
+}

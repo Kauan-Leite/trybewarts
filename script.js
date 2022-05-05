@@ -64,3 +64,21 @@ function disable(){
   }
 }
 checkAgree.addEventListener('click', disable);
+
+
+
+let text = document.getElementById('textarea');
+let outputCount = document.getElementById('counter');
+
+let count = 500;
+outputCount.innerHTML = count;
+
+
+
+function contador(){
+  let contentText = text.value;
+  let tamanhoText = contentText.length;
+  outputCount.innerHTML = count - tamanhoText;
+}
+
+text.addEventListener('keyup', contador);
