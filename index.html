@@ -8,6 +8,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
   <title>Trybewarts</title>
 </head>
 <body>
@@ -27,18 +30,18 @@
     <main>
     <form id="evaluation-form" action="">
       <div class="inline">
-        <label for="input-name">Nome:</label>
+        <label for="input-name"><p>Nome:</p></label>
         <input type="text" id="input-name" placeholder="Nome">
-        <label for="input-lastname">Sobrenome:</label>
+        <label for="input-lastname"><p>Sobrenome:</p></label>
         <input type="text" id="input-lastname" placeholder="Sobrenome">
       </div>
      
 
       <div class="inline">
-        <label for="input-email">Email:</label>
+        <label for="input-email"><p>Email:</p></label>
         <input type="text" id="input-email" placeholder="Email">
   
-        <label for="house">Casa:</label>
+        <label for="house"><p>Casa:</p></label>
         <select name="house" id="house">
           <option value="Gitnória" id="gitnoria-house">Gitnória</option>
           <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
@@ -99,7 +102,7 @@
 
     <!--Feedback-->
     <p id="label-rate">Como você avalia a Trybewarts?</p>
-
+    <div id="container-rate">
       <label for="Um">
         <input type="radio" class="rate" name="rate" id="Um"  value="1">1
       </label>
@@ -139,11 +142,11 @@
       <label for="Dez">
         <input type="radio" class="rate" name="rate" id="Dez"  value="10">10
       </label>
-
+    </div>
 
     <!--Textarea-->
 
-    <label class='textarea' for="textarea">Deixe seu comentário:</label>
+    <label class='textarea' for="textarea"><p>Deixe seu comentário:</p></label>
     <textarea name="textarea" id="textarea" cols="8" rows="5" maxlength="500"></textarea>
 
     <p id="counter"></p>
@@ -167,6 +170,7 @@
 
     <footer>
       <p>Direitos reservados à Trybewarts©</p>
+      <p>Site realizado por Giovanni Ferreira, Kauan Leite, Marcos Oliveira.</p>
     </footer>
 
 
