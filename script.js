@@ -42,46 +42,6 @@ function contador() {
 
 text.addEventListener('input', contador);
 
-
-function showValues(event){
-  event.preventDefault();
-  
-  formCadastro.innerHTML = '';
-}
-btnCadastro.addEventListener('click', showValues);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //    FOR LABEL
 
 // function createRate(){
@@ -101,10 +61,7 @@ btnCadastro.addEventListener('click', showValues);
 // }
 // createRate();
 
-
-
 //    INFOS
-
 
 const nome = document.getElementById('input-name');
 const sobrenome = document.getElementById('input-lastname');
@@ -115,17 +72,11 @@ const front = document.getElementById('Frontend');
 const back = document.getElementById('Backend');
 const full = document.getElementById('FullStack');
 
-const hofs = document.getElementById('HoFs');
-const jest = document.getElementById('Jest');
-const promises = document.getElementById('Promises');
-const react = document.getElementById('React');
-const sql = document.getElementById('SQL');
-const python = document.getElementById('Python');
+const subject = document.querySelectorAll('.subject');
 
 const arrayChecked = [];
 
-function infos(event) {
-  event.preventDefault();
+function create() {
   formCadastro.innerHTML = '';
 
   const createName = document.createElement('label');
@@ -139,7 +90,9 @@ function infos(event) {
   const createCasa = document.createElement('label');
   createCasa.innerText = `Casa: ${casa.value}`;
   formCadastro.appendChild(createCasa);
+}
 
+function family() {
   if (front.checked === true) {
     const createFamilia = document.createElement('label');
     createFamilia.innerText = `Família: ${front.value}`;
@@ -153,34 +106,23 @@ function infos(event) {
     createFamilia.innerText = `Família: ${full.value}`;
     formCadastro.appendChild(createFamilia);
   }
+}
 
-  const createMaterias = document.createElement('label');
-  createMaterias.classList.add('subject');
+const createMaterias = document.createElement('label');
+createMaterias.classList.add('mat');
 
+function materias() {
   formCadastro.appendChild(createMaterias);
-
-  if (hofs.checked === true) {
-    arrayChecked.push('HoFs');
-  }
-  if (jest.checked === true) {
-    arrayChecked.push(' Jest');
-  }
-  if (promises.checked === true) {
-    arrayChecked.push(' Promises');
-  }
-  if (react.checked === true) {
-    arrayChecked.push(' React');
-  }
-  if (sql.checked === true) {
-    arrayChecked.push(' SQL');
-  }
-  if (python.checked === true) {
-    arrayChecked.push(' Python');
+  for (let index = 0; index < subject.length; index += 1) {
+    if (subject[index].checked === true) {
+      arrayChecked.push(` ${subject[index].value}`);
+    }
   }
 
   createMaterias.innerHTML = `Matérias: ${arrayChecked}`;
-  
+}
 
+function avalicao() {
   for (let index = 0; index < atual.length; index += 1) {
     if (atual[index].checked === true) {
       const createAvaliacao = document.createElement('label');
@@ -188,9 +130,20 @@ function infos(event) {
       formCadastro.appendChild(createAvaliacao);
     }
   }
+}
 
+function observacao() {
   const createObservacao = document.createElement('label');
   createObservacao.innerHTML = `Observações: ${text.value}`;
   formCadastro.appendChild(createObservacao);
 }
-btnCadastro.addEventListener('click', infos)
+
+function infos(event) {
+  event.preventDefault();
+  create();
+  family();
+  materias();
+  avalicao();
+  observacao();
+}
+btnCadastro.addEventListener('click', infos);
