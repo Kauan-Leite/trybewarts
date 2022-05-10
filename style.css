@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: '(Mukta)', sans-serif;
+}
+
 .header {
   display: flex;
   flex-wrap: wrap;
@@ -13,15 +20,31 @@ header img {
 header h1 {
   display: flex;
   align-items: center;
+  color: white;
 }
 
 .trybewarts-login {
   display: flex;
 }
 
+.trybewarts-login input {
+  padding: 8px;
+  border: 1px solid black;
+  border-radius: 25px;
+}
+
+.trybewarts-login button {
+  border-radius: 8px;
+}
+
+.trybewarts-login button:hover {
+  cursor: pointer;
+}
+
 main {
   display: flex;
   background-color: beige;
+  padding: 8px;
 }
 
 #evaluation-form {
@@ -47,4 +70,5 @@ main {
 footer {
   background-color: rgb(105, 4, 12);
   color: white;
+  text-align: center;
 }
