@@ -24,7 +24,7 @@ A aplicação está sendo hospedada pelo Vercel, basta acessar <a href="https://
 
 
 ## :speech_balloon: Equipe
-* <a href="https://github.com/Kauan-Leite" target="_blank">Kauan Leite</a>
+* Kauan Leite
 * Giovanni Ferreira
 * Marcos Oliveira
 
