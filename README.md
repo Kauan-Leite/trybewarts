@@ -1,8 +1,7 @@
 # 🏰 TrybeWarts
 
 <div align="center">
-  <!-- <img src="" alt="" width="200px"/> !-->
-  <p> Imagens do Projeto </p>
+  <img src="https://user-images.githubusercontent.com/102389576/232866470-af3a8fbd-54b9-4ef2-a6c3-1289c1756cf8.png" alt="Tela do Projeto TrybeWarts" width="800px"/>
 </div>
 
 ## :microscope: Desenvolvimento
