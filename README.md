@@ -1,10 +1,30 @@
-# :construction: README em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto.
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+# 🏰 TrybeWarts
+
+<div align="center">
+  <!-- <img src="" alt="" width="200px"/> !-->
+  <p> Imagens do Projeto </p>
+</div>
+
+## :microscope: Desenvolvimento
+
+Projeto desenvolvido na <a href="https://betrybe.com/" target="_blank">Trybe</a> durante o módulo de Fundamentos!
+
+Nesse projeto foi desenvolvido uma aplicação com a finalidade de ser um formulario para ingressar na escola TrybeWarts.
+
+## :dna: Execução
+<br />
+
+A aplicação está sendo hospedada pelo Vercel, basta acessar <a href="https://trybewarts-ten.vercel.app/" target="_blank">TrybeWarts</a>.
+
+## ⚙️ Tecnologias
+
+- HTML
+- CSS
+- JavaScript
+
+
+## :speech_balloon: Equipe
+* <a href="https://github.com/Kauan-Leite" target="_blank">Kauan Leite</a>
+* Giovanni Ferreira
+* Marcos Oliveira
+
